@@ -1,9 +1,10 @@
 //1
-let arr = [2, 5, 9, 3, 1, 4];
-let res = 0;
+let weekDays = {};
+let arr1 = ['пн', 'вт', 'ср', 'чт', 'пт', 'сб', 'вс'];  
+let arr2 = [1, 2, 3, 4, 5, 6, 7]; 
 
-for (let elem of arr) {
-	res += elem;
+for (let i = 0; i < arr1.length; i++) {
+  weekDays[arr1[i]] = arr2[i];
 }
 
-console.log(res);
+console.log(weekDays);

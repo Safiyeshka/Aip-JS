@@ -1,9 +1,6 @@
 //1
-let arr = [2, 5, 9, 3, 1, 4];
-let res = 0;
-
-for (let elem of arr) {
-	res += elem;
+for (let i = 10; i <= 1000; i++) {
+	let str = String(i); 
+		console.log(str[0]);
+	
 }
-
-console.log(res);

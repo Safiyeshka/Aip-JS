@@ -1,9 +1,11 @@
 //1
-let arr = [2, 5, 9, 3, 1, 4];
-let res = 0;
+let obj = {a: 10, b: 20, c: 30, d: 40, e: 50};
+let sum = 0;
 
-for (let elem of arr) {
-	res += elem;
+for (let elem in obj) {
+  if (elem[0] === '1' || elem[0] === '2') {
+    sum += obj[elem];
+  }
 }
 
-console.log(res);
+console.log(sum);

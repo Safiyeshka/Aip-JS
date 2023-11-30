@@ -1,9 +1,13 @@
 //1
-let arr = [2, 5, 9, 3, 1, 4];
-let res = 0;
+let sum = 0;
+let arr = [10, 20, 30, 40, 21, 32, 51]; 
 
 for (let elem of arr) {
-	res += elem;
+  let firstDigit = Math.floor(elem / 10); 
+  
+  if (firstDigit === 1 || firstDigit === 2) {
+    sum += elem; 
+  }
 }
 
-console.log(res);
+console.log(sum);

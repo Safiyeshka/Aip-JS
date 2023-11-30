@@ -1,9 +1,9 @@
 //1
-let arr = [2, 5, 9, 3, 1, 4];
-let res = 0;
 
-for (let elem of arr) {
-	res += elem;
+let arr = [];
+
+for (let i = 1; i <= 10; i++) {
+  arr.push(i);
 }
 
-console.log(res);
+console.log(arr); 

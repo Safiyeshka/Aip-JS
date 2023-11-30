@@ -1,9 +1,6 @@
 //1
-let arr = [2, 5, 9, 3, 1, 4];
-let res = 0;
-
-for (let elem of arr) {
-	res += elem;
+for (let i = 1; i <= 9; i++) { 
+   for (let j = 1; j <= 3; j++) { 
+      document.write(i); 
+   } 
 }
-
-console.log(res);

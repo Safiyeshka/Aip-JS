@@ -1,9 +1,8 @@
 //1
-let arr = [2, 5, 9, 3, 1, 4];
-let res = 0;
-
+let arr = [1, 2, 3, 4, 5];
 for (let elem of arr) {
-	res += elem;
+  console.log(elem);
+  if (elem === 0) {
+    break;
+  }
 }
-
-console.log(res);
