@@ -1,76 +1,17 @@
-//1
-let employees = [
-	{
-		name: 'name1',
-		salary: 300,
-	},
-	{
-		name: 'name2',
-		salary: 400,
-	},
-	{
-		name: 'name3',
-		salary: 500,
-	},
-];
-for (let employee of employees) 
-  console.log(employee.name + ' - ' + employee.salary);
+"use strict";
+// 1  
+let arr1 = [1, 2, 3, 4, 5];
+arr1.splice(1, 2);
+console.log(arr1); // [1, 4, 5]
 
-//2
-let empl = [
-	{
-		name: 'name1',
-		salary: 300,
-	},
-	{
-		name: 'name2',
-		salary: 400,
-	},
-	{
-		name: 'name3',
-		salary: 500,
-	},
-];
-let totalSalary = 0;
-for (let employee of empl) 
-  totalSalary += employee.salary;
+// 2. 
+let arr2 = [1, 2, 3, 4, 5];
+arr2.splice(3, 0, 'a', 'b', 'c');
+console.log(arr2); // [1, 2, 3, 'a', 'b', 'c', 4, 5]
 
-console.log('Сумма зарплат всех работников: ' + totalSalary);
-
-
-//3
-let employ = [
-	{
-		name: 'name1',
-		salary: 300,
-		age: 28,
-	},
-	{
-		name: 'name2',
-		salary: 400,
-		age: 29,
-	},
-	{
-		name: 'name3',
-		salary: 500,
-		age: 30,
-	},
-	{
-		name: 'name4',
-		salary: 600,
-		age: 31,
-	},
-	{
-		name: 'name5',
-		salary: 700,
-		age: 32,
-	},
-];
-
-let totalSalaryOver30 = 0;
-for (let employee of employ) 
-  if (employee.age >= 30) 
-    totalSalaryOver30 += employee.salary;
-  
-
-console.log('Сумма зарплат работников возрастом 30 и более лет: ' + totalSalaryOver30);
+// 3. 
+let arr = [1, 2, 3, 4, 5];
+arr.splice(1, 0, 'a', 'b');
+arr.splice(6, 0, 'c');
+arr.splice(8, 0, 'e');
+console.log(arr); // [1, 'a', 'b', 2, 3, 4, 'c', 5, 'e']

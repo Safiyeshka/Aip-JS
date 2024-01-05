@@ -1,76 +1,16 @@
-//1
-let employees = [
-	{
-		name: 'name1',
-		salary: 300,
-	},
-	{
-		name: 'name2',
-		salary: 400,
-	},
-	{
-		name: 'name3',
-		salary: 500,
-	},
-];
-for (let employee of employees) 
-  console.log(employee.name + ' - ' + employee.salary);
 
-//2
-let empl = [
-	{
-		name: 'name1',
-		salary: 300,
-	},
-	{
-		name: 'name2',
-		salary: 400,
-	},
-	{
-		name: 'name3',
-		salary: 500,
-	},
-];
-let totalSalary = 0;
-for (let employee of empl) 
-  totalSalary += employee.salary;
+// 1 Дана строка '1-2-3-4-5'. С помощью метода split запишите каждое число этой строки в отдельный элемент массива. 
+let one = '1-2-3-4-5';
+let arr = [];
+arr = one.split('-');
+console.log(arr);
 
-console.log('Сумма зарплат всех работников: ' + totalSalary);
+// 2 Дана строка '12345'. С помощью метода split запишите каждый символ этой строки в отдельный элемент массива.
+let two = '12345';
+let arr2 = two.split('');
+console.log(arr2);
 
-
-//3
-let employ = [
-	{
-		name: 'name1',
-		salary: 300,
-		age: 28,
-	},
-	{
-		name: 'name2',
-		salary: 400,
-		age: 29,
-	},
-	{
-		name: 'name3',
-		salary: 500,
-		age: 30,
-	},
-	{
-		name: 'name4',
-		salary: 600,
-		age: 31,
-	},
-	{
-		name: 'name5',
-		salary: 700,
-		age: 32,
-	},
-];
-
-let totalSalaryOver30 = 0;
-for (let employee of employ) 
-  if (employee.age >= 30) 
-    totalSalaryOver30 += employee.salary;
-  
-
-console.log('Сумма зарплат работников возрастом 30 и более лет: ' + totalSalaryOver30);
+// 3 С помощью метода join слейте его в строку '1-2-3-4-5'.
+let three = [1, 2, 3, 4, 5];
+let str = three.join('-');
+console.log(str);

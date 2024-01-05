@@ -1,76 +1,18 @@
-//1
-let employees = [
-	{
-		name: 'name1',
-		salary: 300,
-	},
-	{
-		name: 'name2',
-		salary: 400,
-	},
-	{
-		name: 'name3',
-		salary: 500,
-	},
-];
-for (let employee of employees) 
-  console.log(employee.name + ' - ' + employee.salary);
+// Найдите квадратный корень из 379. Результат округлите до целых, до десятых, до сотых.
+let sq = Math.sqrt(379);
+console.log(sq);
+console.log(Math.round(sq));
+console.log(sq.toFixed([2]));
+console.log(sq.toFixed([3]));
 
-//2
-let empl = [
-	{
-		name: 'name1',
-		salary: 300,
-	},
-	{
-		name: 'name2',
-		salary: 400,
-	},
-	{
-		name: 'name3',
-		salary: 500,
-	},
-];
-let totalSalary = 0;
-for (let employee of empl) 
-  totalSalary += employee.salary;
+// 2 Найдите квадратный корень из 587. Округлите результат в большую и меньшую стороны, запишите результаты округления в объект с ключами 'floor' и 'ceil'.
 
-console.log('Сумма зарплат всех работников: ' + totalSalary);
-
-
-//3
-let employ = [
-	{
-		name: 'name1',
-		salary: 300,
-		age: 28,
-	},
-	{
-		name: 'name2',
-		salary: 400,
-		age: 29,
-	},
-	{
-		name: 'name3',
-		salary: 500,
-		age: 30,
-	},
-	{
-		name: 'name4',
-		salary: 600,
-		age: 31,
-	},
-	{
-		name: 'name5',
-		salary: 700,
-		age: 32,
-	},
-];
-
-let totalSalaryOver30 = 0;
-for (let employee of employ) 
-  if (employee.age >= 30) 
-    totalSalaryOver30 += employee.salary;
-  
-
-console.log('Сумма зарплат работников возрастом 30 и более лет: ' + totalSalaryOver30);
+let sqr = Math.sqrt(587);
+let a = Math.ceil(sqr), b = Math.floor(sqr);
+console.log(sqr);
+console.log(a);   //в большую 
+console.log(b);  // в меньшую
+let obj = {};
+obj['ceil'] = a;
+obj['floor'] = b;
+console.log(obj);

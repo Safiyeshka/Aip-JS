@@ -1,76 +1,37 @@
-//1
-let employees = [
-	{
-		name: 'name1',
-		salary: 300,
-	},
-	{
-		name: 'name2',
-		salary: 400,
-	},
-	{
-		name: 'name3',
-		salary: 500,
-	},
-];
-for (let employee of employees) 
-  console.log(employee.name + ' - ' + employee.salary);
 
-//2
-let empl = [
-	{
-		name: 'name1',
-		salary: 300,
-	},
-	{
-		name: 'name2',
-		salary: 400,
-	},
-	{
-		name: 'name3',
-		salary: 500,
-	},
-];
-let totalSalary = 0;
-for (let employee of empl) 
-  totalSalary += employee.salary;
+let affairs = {
+	'2019-12-28': ['data11', 'data12', 'data13'],
+	'2019-12-29': ['data21', 'data22', 'data23'],
+	'2019-12-30': ['data31', 'data32', 'data33'],
+}
 
-console.log('Сумма зарплат всех работников: ' + totalSalary);
+// 2 
+affairs['2019-12-29'].push('новое_дело');
+console.log(affairs['2019-12-29']);
 
+// 3 
+affairs['2019-12-31'] = [];
+affairs['2019-12-31'].push('новое_дело1');
+affairs['2019-12-31'].push('новое_дело2');
+console.log(affairs['2019-12-31']);
 
-//3
-let employ = [
-	{
-		name: 'name1',
-		salary: 300,
-		age: 28,
+// 5 
+let students = {
+	'group1': {
+		'subgroup11': ['student111', 'student112', 'student113'],
+		'subgroup12': ['student121', 'student122', 'student123'],
 	},
-	{
-		name: 'name2',
-		salary: 400,
-		age: 29,
+	'group2': {
+		'subgroup21': ['student211', 'student212', 'student213'],
+		'subgroup22': ['student221', 'student222', 'student223'],
 	},
-	{
-		name: 'name3',
-		salary: 500,
-		age: 30,
+	'group3': {
+		'subgroup31': ['student311', 'student312', 'student313'],
+		'subgroup32': ['student321', 'student322', 'student323'],
 	},
-	{
-		name: 'name4',
-		salary: 600,
-		age: 31,
-	},
-	{
-		name: 'name5',
-		salary: 700,
-		age: 32,
-	},
-];
-
-let totalSalaryOver30 = 0;
-for (let employee of employ) 
-  if (employee.age >= 30) 
-    totalSalaryOver30 += employee.salary;
-  
-
-console.log('Сумма зарплат работников возрастом 30 и более лет: ' + totalSalaryOver30);
+};
+students['group1']['subgroup11'].push('new student');
+console.log(students['group1']['subgroup11']);
+// 6 
+students['group1']['newpodgroup'] = ['newStudent1', 'newStudent2', 'newStudent3'];
+console.log(students['group1']['newpodgroup']);
