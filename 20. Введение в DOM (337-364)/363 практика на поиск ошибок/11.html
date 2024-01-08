@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="1.js"></script>
+</head>
+<body>
+    <input data-text="text1">
+    <input data-text="text2">
+    <input data-text="text3">
+    
+    <button id="btn">click</button>
+    <script>
+
+let inputs = document.querySelectorAll('input');
+let button = document.querySelector('#btn');
+
+button.addEventListener('click', function() {
+  for (let input of inputs) {
+    if (input.value === input.dataset.text) {
+      input.classList.add('right');
+    } else {
+      input.classList.remove('right');
+    }
+  }
+});
+
+
+    </script>
+</body>
+</html>

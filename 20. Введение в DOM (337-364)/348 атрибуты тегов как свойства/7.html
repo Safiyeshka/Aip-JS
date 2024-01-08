@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="1.js"></script>
+</head>
+<body>
+    <img id="myImage" src="k1.png" alt="Картинка">
+
+    <button id="myButton">Нажми меня</button>
+
+
+    <script>
+
+    let image = document.getElementById("myImage");
+    let button = document.getElementById("myButton");
+
+    button.addEventListener("click", function() {
+        let currentWidth = image.width;
+        image.width = currentWidth / 2;
+    });
+
+    </script>
+</body>
+</html>
